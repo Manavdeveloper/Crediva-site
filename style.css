@@ -1,3 +1,10 @@
+:root {
+  --primary: #2563eb;     /* main blue */
+  --secondary: #eef1ff;   /* light lavender */
+  --accent: #c7cbe8;      /* muted accent */
+  --text: #0b1f3a;        /* dark text */
+  --bg: #ffffff;          /* background */
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +13,8 @@
 }
 
 body {
-  background: #ffffff;
-  color: #0b1f3a;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .nav {
@@ -18,7 +25,7 @@ body {
 
 .hero {
   padding: 80px 40px;
-  background: #eef1ff;
+  background: var(--secondary);
 }
 
 .hero h1 {
@@ -35,7 +42,7 @@ body {
 }
 
 .primary {
-  background: #2563eb;
+  background: var(--primary);
   color: white;
 }
 
@@ -50,7 +57,7 @@ body {
 }
 
 .card {
-  background: #f5f6ff;
+  background: var(--accent);
   padding: 20px;
   border-radius: 8px;
 }
