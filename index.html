@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Crediva — Faster Brand x Creator Payments</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crediva Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #6225E6;
+            color: white;
+        }
+        .features, .waitlist, .payment-counter {
+            margin: 40px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .social-media {
+            text-align: center;
+            padding: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body>
 
-  <header class="nav">
-    <h2>Crediva</h2>
-    <a href="#auth" class="btn">Early Access</a>
-  </header>
+<header>
+    <h1>Welcome to Crediva</h1>
+    <p>Your go-to platform for modern financial solutions.</p>
+</header>
 
-  <section class="hero">
-    <h1>Fixing Creator Payments.</h1>
-    <p>Crediva helps brands and creators collaborate with payouts in weeks, not months.</p>
-    <a href="#waitlist" class="btn primary">Join the Waitlist</a>
-  </section>
-
-  <section class="why">
-    <h2>Why Crediva?</h2>
-    <div class="cards">
-      <div class="card">⏱ 2–3 week payouts</div>
-      <div class="card">🤝 Brand–Creator trust</div>
-      <div class="card">🚀 Built for early creators</div>
+<div class="container">
+    <div class="features">
+        <h2>Our Features</h2>
+        <ul>
+            <li>Easy Signup</li>
+            <li>Real-time Analytics</li>
+            <li>Secure Transactions</li>
+        </ul>
     </div>
-  </section>
 
-  <section id="waitlist" class="waitlist">
-    <h2>Coming Soon</h2>
-    <p>Building in public. Get early access.</p>
-    <form>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <select>
-        <option>Creator</option>
-        <option>Brand</option>
-      </select>
-      <button class="btn primary">Notify Me</button>
-    </form>
-  </section>
-
-  <section id="auth" class="auth">
-    <h2>Login / Sign Up</h2>
-    <div class="toggle">
-      <button class="active">Creator</button>
-      <button>Brand</button>
+    <div class="waitlist">
+        <h2>Join Our Waitlist</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+        </form>
     </div>
-    <input type="email" placeholder="Email" />
-    <input type="password" placeholder="Password" />
-    <button class="btn primary">Continue</button>
-  </section>
 
-  <footer>
-    <p>© 2026 Crediva — Building the future of creator payments</p>
-  </footer>
+    <div class="payment-counter">
+        <h2>Payments Processed:</h2>
+        <p>5000+</p>
+    </div>
+
+    <div class="social-media">
+        <h2>Follow Us</h2>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</div>
 
 </body>
 </html>
